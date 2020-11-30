@@ -1,0 +1,50 @@
+{% extends "frontend/base.html" %}
+
+{% load static %}
+
+{% block content %}   
+  <!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'frontend/assets/img/slider/exam.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <!-- <h4>CONGRATULATIONS TO ALL #COMING2OLUAKA</h4> -->
+      </div>
+    </div>
+
+    <!-- Start single slider item -->    
+  </section>
+  <!-- End Slider -->
+  <!-- Start service  -->
+  <section id="mu-service">
+    <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-service-area">
+            <!-- Start single service -->
+            <div class="mu-service-single"  id="service-pad">             
+              <!-- <span class="fa fa-book"></span> -->
+              <h3 style="text-align: left;">EXAMINATION & ASSESSMENT</h3>
+              <hr>
+              <p style="text-align: justify;">A test or examination is an assessment intended to measure a test-taker's knowledge, 
+                skill, aptitude, physical fitness, or classification in many other topics. A test may be administered verbally, 
+                on paper, on a computer, or in a predetermined area that requires a test taker to demonstrate or perform a set of skills.</p>
+                <p style="text-align: justify;">Examinations have good and bad sides but it is how a person deals with them. Examinations have good and bad sides.
+                  They Can be Constructive as well as Destructive. It all depends on the Personality and Character of a person. 
+                  Examinations are an important part of academic studies. Though Good Examinations are those which prepare you for a 
+                  Bright Future and not for creating unnecessary competition and burden.</p>
+                <p style="text-align: justify;">At Oluaka, we do not just prepare and test you for cognitive skills alone, but also the application and technical skills</p>
+                <p style="text-align: justify;">Our examinations are project based across various Department.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+  <!-- End service  -->
+{% endblock content %}

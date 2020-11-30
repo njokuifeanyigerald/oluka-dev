@@ -1,0 +1,243 @@
+{% extends "students/base.html" %}
+
+{% block content %}
+
+{% if student.student_fname %}
+
+{% else %}
+  <!-- Form Row -->
+
+<div class="row">
+    <div class="col-xl-12 col-md-12 mb-12">
+        <div class="card">
+            <div class="card-header">
+                Oluaka Institute
+            </div>
+            <div class="text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Full Course Enrollment Form</h5>
+                    <form class="text-left text-capitalize" action="{% url 'full_course' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fullname">full name</label>
+                                <input type="text" class="form-control " name="fullname" id="fullname" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="dateOfBirth">date of birth</label>
+                                <input type="date" class="form-control" name="dateOfBirth" id="dateOfBirth" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="gender">Gender</label>
+                                <select id="gender" class="form-control" name="gender" required>
+                                    <option selected></option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="phoneNumber">phone number</label>
+                                <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">full address</label>
+                            <input type="text"  class="form-control" id="inputAddress"
+                                placeholder="4 orji, Owerri, Imo State" name="inputAddress" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" name="inputCity" id="inputCity" placeholder="owerri city" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputStateOrigin">State of origin</label>
+                                <select id="inputStateOrigin" name="inputStateOrigin" class="form-control" required>
+                                    <option selected></option>
+                                    <option>Abia</option>
+                                    <option>Adamawa</option>
+                                    <option>Akwa Ibom</option>
+                                    <option>Anambra</option>
+                                    <option>Bauchi</option>
+                                    <option>Bayelsa</option>
+                                    <option>Benue</option>
+                                    <option>Borno</option>
+                                    <option>Cross River</option>
+                                    <option>Delta</option>
+                                    <option>Ebonyi</option>
+                                    <option>Edo</option>
+                                    <option>Ekiti</option>
+                                    <option>Enugu</option>
+                                    <option>Gombe</option>
+                                    <option>Imo</option>
+                                    <option>Jigawa</option>
+                                    <option>Kaduna</option>
+                                    <option>Kano</option>
+                                    <option>Katsina</option>
+                                    <option>Kebbi</option>
+                                    <option>Kogi</option>
+                                    <option>Kwara</option>
+                                    <option>Lagos</option>
+                                    <option>Nasarawa</option>
+                                    <option>Niger</option>
+                                    <option>Ogun</option>
+                                    <option>Ondo</option>
+                                    <option>Osun</option>
+                                    <option>Oyo</option>
+                                    <option>Plateau</option>
+                                    <option>Rivers</option>
+                                    <option>Sokoto</option>
+                                    <option>Taraba</option>
+                                    <option>Yobe</option>
+                                    <option>Zamfara</option>
+                                    <option>Federal Capital Territory</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State of residence</label>
+                                <select id="inputState" name="inputState" class="form-control" required>
+                                    <option selected><option>
+                                    <option>Abia</option>
+                                    <option>Adamawa</option>
+                                    <option>Akwa Ibom</option>
+                                    <option>Anambra</option>
+                                    <option>Bauchi</option>
+                                    <option>Bayelsa</option>
+                                    <option>Benue</option>
+                                    <option>Borno</option>
+                                    <option>Cross River</option>
+                                    <option>Delta</option>
+                                    <option>Ebonyi</option>
+                                    <option>Edo</option>
+                                    <option>Ekiti</option>
+                                    <option>Enugu</option>
+                                    <option>Gombe</option>
+                                    <option>Imo</option>
+                                    <option>Jigawa</option>
+                                    <option>Kaduna</option>
+                                    <option>Kano</option>
+                                    <option>Katsina</option>
+                                    <option>Kebbi</option>
+                                    <option>Kogi</option>
+                                    <option>Kwara</option>
+                                    <option>Lagos</option>
+                                    <option>Nasarawa</option>
+                                    <option>Niger</option>
+                                    <option>Ogun</option>
+                                    <option>Ondo</option>
+                                    <option>Osun</option>
+                                    <option>Oyo</option>
+                                    <option>Plateau</option>
+                                    <option>Rivers</option>
+                                    <option>Sokoto</option>
+                                    <option>Taraba</option>
+                                    <option>Yobe</option>
+                                    <option>Zamfara</option>
+                                    <option>Federal Capital Territory</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="levelOfEducation">Highest Level of education</label>
+                            <select id="levelOfEducation" name="levelOfEducation" class="form-control" required>
+                                <option selected></option>
+                                <option>High School Diploma</option>
+                                <option>Degree</option>
+                                <option>Masters</option>
+                                <option>ND</option>
+                                <option>HND</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="coursePlan">Course Plan</label>
+                                <select id="coursePlan" name="coursePlan" class="form-control" required>
+                                    <option selected></option>
+                                    <option>Part Time</option>
+                                    <option>Regular</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="levelOfCourse1">Select First Choice</label>
+                                <select id="levelOfCourse1" name="levelOfCourse1" class="form-control" required>
+                                    <option selected></option>
+                                    <option>Computer Hardware Engineering</option>
+                                    <option>Computer Software Engineering </option>
+                                    <option>Networking And System Security</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="levelOfCourse2">Select Second Choice</label>
+                                <select id="levelOfCourse2"  name="levelOfCourse2" class="form-control" required>
+                                    <option selected></option>
+                                    <option>Computer Hardware Engineering</option>
+                                    <option>Computer Software Engineering </option>
+                                    <option>Networking And System Security</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Passport">Upload Passport</label>
+                            <input type="file" class="form-control" name="Passport" id="Passport">
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" name="gridCheck" type="checkbox" id="gridCheck" >
+                                <label class="form-check-label"   for="gridCheck"  >
+                                    disability
+                                </label>
+                            </div>
+                        </div>
+                        <br><br>
+                        <h4>NEXT OF KIN</h4>
+                        <hr class="my-4">
+                        <div class="form-group ">
+                            <label for="nextOfKinFullName">full name</label>
+                            <input type="text" class="form-control" name="nextOfKinFullName" id="nextOfKinFullName" required>
+                        </div>
+                        <div class="form-group ">
+                            <label for="nextOfKinEmail">Email</label>
+                            <input type="text" class="form-control" name="nextOfKinEmail" id="nextOfKinEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nextOfKinPhoneNumber">phone number</label>
+                            <input type="number" class="form-control" name="nextOfKinPhoneNumber" id="nextOfKinPhoneNumber" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nextOfKinAddress">address</label>
+                                <input type="text" class="form-control" name="nextOfKinAddress" id="nextOfKinAddress" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nextOfKinRelationship">relationship</label>
+                                <select id="nextOfKinRelationship" name="nextOfKinRelationship" class="form-control" required>
+                                    <option selected></option>
+                                    <option>Brother</option>
+                                    <option>Sister</option>
+                                    <option>Father</option>
+                                    <option>Mother</option>
+                                    <option>Relative</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" value="submit" name="submit" class="btn btn-primary mt-4">Enroll For Course</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form Row Ends Here -->
+{% endif %}
+
+{% endblock content %}

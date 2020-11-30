@@ -1,0 +1,335 @@
+{% extends "students/base.html" %}
+
+{% block content %}
+
+{% if admission.admitted %}
+
+{% else %}
+
+{% endif %}
+<!-- Student Profile Row -->
+
+<div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
+                        alt="" />
+                    <div class="file btn btn-lg btn-primary">
+                        ENROLLED
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="profile-head">
+                    <h5>
+                        COURSE ENROLLED
+                    </h5>
+                    <h6>
+                        Web Development and Data Science
+                    </h6>
+                    <p class="proile-rating">STUDENT ID <span>2020/WD-DS/045</span></p>
+                    <!-- <p class="text-right">
+                                            <a href="../profile.html" class="profile-edit-btn">Edit Profile</a>
+                                        </p> -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Guardian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="department-tab" data-toggle="tab" href="#department" role="tab"
+                                aria-controls="department" aria-selected="false">Department</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="waec-tab" data-toggle="tab" href="#waec" role="tab"
+                                aria-controls="waec" aria-selected="false">WAEC
+                                Result</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="jamb-tab" data-toggle="tab" href="#jamb" role="tab"
+                                aria-controls="jamb" aria-selected="false">JAMB
+                                Result</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <p>WORK LINK</p>
+                    <a href="">Website Link</a><br />
+                    <a href="">Bootsnipp Profile</a><br />
+                    <a href="">Bootply Profile</a>
+                    <p>SKILLS</p>
+                    <a href="">Web Designer</a><br />
+                    <a href="">Web Developer</a><br />
+                    <a href="">WordPress</a><br />
+                    <a href="">WooCommerce</a><br />
+                    <a href="">PHP, .Net</a><br />
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Name</th>
+                                            <td>Kshiti Ghelani</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+                                            <td>kshitighelani@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Phone</th>
+                                            <td colspan="2">123 456 7890</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Course</th>
+                                            <td>Web Developer and Data Science</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Address</th>
+                                            <td>in my house</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Data Enrolled</th>
+                                            <td>29-08-2020</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Name</th>
+                                            <td>Kshiti Ghelani</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+                                            <td>kshitighelani@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Phone</th>
+                                            <td colspan="2">123 456 7890</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Relationship</th>
+                                            <td>Your Father</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Address</th>
+                                            <td>in my house</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Occupation</th>
+                                            <td>Nigerian Presido</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="department" role="tabpanel" aria-labelledby="department-tab">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Department</th>
+                                            <td>Sciences</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Course Enrolled</th>
+                                            <td>DS</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Subjects</th>
+                                            <td colspan="2">
+                                                <ol>
+                                                    <li>Intro to CS</li>
+                                                    <li>Basic Math</li>
+                                                    <li>Algorithm</li>
+                                                    <li>etc biko</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">HOD</th>
+                                            <td>
+                                                <p>Mr. Winner Emeto
+                                                <p><small>Email <q>emetowinner@gmail.com</q></small>
+                                                </p>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="waec" role="tabpanel" aria-labelledby="waec-tab">
+                        <div class="row">
+                            <div class="card col">
+                                <div class="mt-2 text-center">
+                                    <h5>THE WEST AFRICAN EXAMINATION COUNCIL RESULT</h5>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered table-hover">
+                                        <h6 scope="col">Candidate Information</h6>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Examination Number</th>
+                                                <td>3678</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Candidate Name</th>
+                                                <td>Jacob</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Examination</th>
+                                                <td colspan="2">WASSE FOR SCHOOL CANDIDATES2017</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Center</th>
+                                                <td colspan="2">village peoples house</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered table-hover">
+                                        <div class="">
+                                            <h6 scope="col">Subject Information</h6>
+                                        </div>
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Subjects</th>
+                                                <th scope="col">Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Mathematics</th>
+                                                <td>A1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">English</th>
+                                                <td>B1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Computer</th>
+                                                <td colspan="2">A1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Algorithm</th>
+                                                <td colspan="2">C5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="jamb" role="tabpanel" aria-labelledby="jamb-tab">
+                        <div class="row">
+                            <div class="card col">
+                                <div class="mt-2 text-center">
+                                    <h5>JAMB <span>2020</span> UTME RESULT</h5>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered table-hover">
+                                        <h6 scope="col">Candidate Information</h6>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Name</th>
+                                                <td>Job</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Reg Number</th>
+                                                <td>33556</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Date of Birth</th>
+                                                <td>20-3-Dat Day</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Origin</th>
+                                                <td>village peoples house</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Examination Number</th>
+                                                <td>334546</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Centre Name</th>
+                                                <td>village peoples house</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered table-hover">
+                                        <div class="">
+                                            <h6 scope="col">Subject Information</h6>
+                                        </div>
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Subjects</th>
+                                                <th scope="col">Score</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Mathematics</th>
+                                                <td>98</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">English</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Computer</th>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Algorithm</th>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td colspan="2">
+                                                    <h4>Total Score: 8000 </h4>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- End of Student Profile Row -->
+
+{% endblock content %}

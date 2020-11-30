@@ -1,0 +1,62 @@
+{% extends "students/base.html" %}
+
+{% block content %}
+
+
+{% if student.student_fname %}
+
+{% else %}
+  <!-- Content Row -->
+<div class="row">
+
+    <!-- Faculties Card Example -->
+    <div class="col-xl-6 col-md-6 mb-4">
+        <div>
+            <p class="text-center">
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseCrashCourse"
+                    aria-expanded="false" aria-controls="collapseCrashCourse">
+                    Crash Course Details
+                </button>
+            </p>
+            <div class="collapse" id="collapseCrashCourse">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                    anderson
+                    cred nesciunt sapiente ea proident.
+                    <div>
+                        <a href="{% url 'crash_course' %}">Enroll</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campuses Card Example -->
+    <div class="col-xl-6 col-md-6 mb-4">
+        <div>
+            <p class="text-center">
+                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseFullCourse"
+                    aria-expanded="false" aria-controls="collapseFullCourse">
+                    Full Course Details
+                </button>
+            </p>
+            <div class="collapse" id="collapseFullCourse">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                    anderson
+                    cred nesciunt sapiente ea proident.
+                    <div>
+                        <a href="{% url 'full_course' %}">Enroll</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% endblock content %}
+
+
